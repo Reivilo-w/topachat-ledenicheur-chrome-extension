@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+  "name": "Topachat Cheapest Stuff",
+  "description": "À quel prix pouvez vous avoir votre stuff ?",
+  "version": "0.1", 
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.topachat.com/pages/configomatic.php*"
+      ],
+      "js": ["jquery-3.5.1.min.js","main-app.js"]
+    }
+  ]
+}
